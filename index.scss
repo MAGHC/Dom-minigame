@@ -1,0 +1,125 @@
+body {
+  position: relative;
+  margin: 0;
+  height: 99vh;
+  background-image: url(img/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .section-play {
+    display: flex;
+    flex-direction: column;
+
+    .play {
+      margin: 0 auto;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      &__button {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        background-color: aqua;
+        border-radius: 0.5rem;
+        border: 3px solid black;
+        &--shpae {
+          position: absolute;
+          top: 25%;
+          left: 20%;
+          width: 2rem;
+          height: 2rem;
+          background-color: black;
+          clip-path: polygon(47% 0, 47% 100%, 100% 49%);
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        &--stop {
+          position: absolute;
+          top: 25%;
+          left: 25%;
+          width: 2rem;
+          height: 2rem;
+          background-color: black;
+        }
+      }
+      &__time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        height: 4rem;
+        background-color: aliceblue;
+        border-radius: 1rem;
+
+        &--content {
+          font-size: 1.5rem;
+        }
+      }
+      &__score {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        background-color: aqua;
+        border-radius: 100%;
+        outline: 2px solid black;
+        outline-offset: 5px;
+        &--content {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .section-main {
+    width: 100%;
+    height: 60vh;
+    margin-top: 1rem;
+    background-color: black;
+  }
+  .section-replay {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    height: 10rem;
+    background-color: rgba($color: black, $alpha: 0.5);
+    position: absolute;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    left: 50%;
+    top: 60%;
+    padding: 2rem;
+    .replay {
+      margin: 0 auto;
+      &__button {
+        margin: auto;
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        background-color: aqua;
+        border-radius: 0.5rem;
+        border: 3px solid black;
+        &--shape {
+          position: absolute;
+          top: 25%;
+          left: 20%;
+          width: 2rem;
+          height: 2rem;
+          background-color: black;
+          clip-path: polygon(47% 0, 47% 100%, 100% 49%);
+        }
+      }
+      &__text {
+        font-size: 2rem;
+      }
+    }
+  }
+  .none {
+    display: none;
+  }
+}
