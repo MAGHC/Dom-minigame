@@ -60,10 +60,10 @@ body {
         body .section-play .play__score--content {
           font-size: 1.5rem; }
   body .section-main {
+    position: relative;
     width: 100%;
     height: 60vh;
-    margin-top: 1rem;
-    background-color: black; }
+    margin-top: 1rem; }
   body .section-replay {
     display: flex;
     flex-direction: column;
