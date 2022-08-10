@@ -4,5 +4,4 @@
 
 source : dream-coding
 
-
-http://maghc.dom_minigame/
+http://maghc.github.io/Dom-minigame/
