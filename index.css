@@ -86,14 +86,6 @@ body {
         background-color: aqua;
         border-radius: 0.5rem;
         border: 3px solid black; }
-        body .section-replay .replay__button--shape {
-          position: absolute;
-          top: 25%;
-          left: 20%;
-          width: 2rem;
-          height: 2rem;
-          background-color: black;
-          clip-path: polygon(47% 0, 47% 100%, 100% 49%); }
       body .section-replay .replay__text {
         font-size: 2rem; }
   body .none {
